@@ -5,7 +5,7 @@
         // these HTTP methods do not require CSRF protection
         return (/^(GET|HEAD|OPTIONS|TRACE)$/i.test(method));
     }
-    
+
     function getCookie(name) {
         var cookieValue = null;
         if (document.cookie && document.cookie != '') {
@@ -22,7 +22,7 @@
         }
         return cookieValue;
     }
-    
+
     // Setup jQuery ajax calls to handle CSRF
     $.ajaxPrefilter(function (settings, originalOptions, xhr) {
         var csrftoken;

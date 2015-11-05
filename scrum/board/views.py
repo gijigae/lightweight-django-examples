@@ -16,7 +16,7 @@ class DefaultsMixin(object):
     
     authentication_classes = (
         authentication.BasicAuthentication,
-        authentication.TokenAuthentication,    
+        authentication.TokenAuthentication,
     )
     permission_classes = (
         permissions.IsAuthenticated,
